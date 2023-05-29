@@ -93,7 +93,7 @@ export const Form = () => {
                   умови угоди користувача
                 </Link>
               </p>
-              
+
               <Btn title="надіслати" className="btn" type="submit" />
             </div>
           </form>
