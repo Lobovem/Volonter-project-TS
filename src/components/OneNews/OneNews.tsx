@@ -17,6 +17,7 @@ export const OneNews = () => {
   }, [id]);
 
   const news = useSelector(oneNewsSelector);
+  
 
   return (
     <>

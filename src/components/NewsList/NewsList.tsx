@@ -6,9 +6,6 @@ import s from './NewsList.module.scss';
 
 export const NewsList = (props:{currentItems:IListNews[]}) => {
   const { currentItems } = props;
-
-  console.log(currentItems);
-  
   // const dispatch = useDispatch();
 
   //I done useMemo that don't render often the component

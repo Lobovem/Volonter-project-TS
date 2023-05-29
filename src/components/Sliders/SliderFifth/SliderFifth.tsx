@@ -8,17 +8,15 @@ import s from './SliderFifth.module.scss';
 import { useRef, useState } from 'react';
 import { BtnSliders } from '../../kit/BtnSliders/BtnSliders';
 
-export const SliderFifth = (props) => {
+export const SliderFifth = (props:any) => {
   const { news } = props;
-
-  console.log('news', news);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   // const listPhoto = news.find((item) => item.photoList);
 
-  const [init, setInit] = useState();
+  const [init, setInit] = useState(false);
 
   return (
     <>
@@ -61,7 +59,7 @@ export const SliderFifth = (props) => {
       >
         <>
           {news.photoList &&
-            news.photoList.map((item, index) => (
+            news.photoList.map((item: string, index:number) => (
               <SwiperSlide className={s.slider__item} key={index}>
                 <div className={s.slider__itemWrap}>
                   <img className={s.slider__img} src={item} alt={item} />
