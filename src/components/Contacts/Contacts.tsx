@@ -11,7 +11,7 @@ export const Contacts = () => {
           frameBorder="0"
           loading="lazy"
           data-testid="map-iframe"
-          ferrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
 

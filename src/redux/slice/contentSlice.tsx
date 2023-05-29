@@ -33,6 +33,7 @@ export const contentSlice = createSlice({
     // },
   },
 
+  
   extraReducers: (builder) => {
     builder
       .addCase(fetchMenu.pending, (state) => {
@@ -81,3 +82,4 @@ export const formDataSelector = (state:IRootState) => state.content.formData;
 export const { changeBurgerState, addFormData, addInputDataForm } = contentSlice.actions;
 
 export default contentSlice.reducer;
+
