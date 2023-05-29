@@ -15,22 +15,21 @@ describe('OneNews', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
-
+  
   const dispatch = jest.fn();
   const oneNews = { id: 1, title: 'Новина', desc: 'News' };
 
   test('renders OneNews component', () => {
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(oneNews);
+    (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(oneNews);
 
     const { container } = render(<OneNews />);
     expect(container).toMatchSnapshot();
   });
 
   test('renders the title correctly', () => {
-    const oneNews = { id: 1, title: 'Новина', desc: 'News' };
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(oneNews);
+   (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(oneNews);
 
     render(<OneNews />);
     const titleElement = screen.getByText('Новина');
@@ -38,9 +37,8 @@ describe('OneNews', () => {
   });
 
   test('renders the "Новини" heading', () => {
-    const oneNews = { id: 1, title: 'Новина', desc: 'News' };
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(oneNews);
+   (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(oneNews);
 
     render(<OneNews />);
     const h3Element = screen.getByRole('heading', { name: 'Новини' });
@@ -48,9 +46,8 @@ describe('OneNews', () => {
   });
 
   test('renders the description correctly', () => {
-    const oneNews = { id: 1, title: 'Новина', desc: 'News' };
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(oneNews);
+   (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(oneNews);
 
     render(<OneNews />);
     const descElement = screen.getByText('News');

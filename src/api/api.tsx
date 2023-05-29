@@ -46,7 +46,7 @@ export const fetchNews = createAsyncThunk<IListNews[]>('content/fetchNews', asyn
 // });
 
 //example axios response
-export const fetchOneNews = createAsyncThunk<IListNews>('content/fetchOneNews', async (id) => {
+export const fetchOneNews = createAsyncThunk<IListNews, string| undefined>('content/fetchOneNews', async (id) => {
   try {
     const response = await fetch(`https://base-twmn.onrender.com/news/${id}`);
     if (!response.ok) {

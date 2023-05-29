@@ -24,9 +24,9 @@ export interface IInputDataForm{
 }
 
 export interface IContentState {
-  listMenu: IListMenu[] | [],
-  listNews: IListNews[] | [],
-  oneNews: IListNews | {},
+  listMenu: IListMenu[],
+  listNews: IListNews[],
+  oneNews: IListNews,
   formData: IInputDataForm[] | [],
   inputDataForm: IInputDataForm,
   isLoading: boolean,

@@ -6,7 +6,7 @@ import { fetchMenu, fetchNews, fetchOneNews } from '../../api/api';
 const initialState: IContentState = {
   listMenu: [],
   listNews: [],
-  oneNews: {},
+  oneNews: {id: '', title: '', desc: '', photoMain: '', photoList: []},
   formData: [],
   inputDataForm: { id: '', name: '', email: '', textarea: '' },
   isLoading: false,

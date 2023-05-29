@@ -5,17 +5,21 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { SliderFifth } from '../Sliders/SliderFifth/SliderFifth';
 import { fetchOneNews } from '../../api/api';
+import { AppDispatch } from '../../redux/config/store';
 import s from './OneNews.module.scss';
 
 export const OneNews = () => {
   const { id } = useParams();
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
     dispatch(fetchOneNews(id));
   }, [id]);
 
   const oneNews = useSelector(oneNewsSelector);
+
+  
+  
 
   return (
     <>
