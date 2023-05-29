@@ -1,31 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Teams renders Teams component 1`] = `
+exports[`TitleMain renders TitleMain component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="teams"
-      >
-        <h3
-          class="teams__decor"
-        >
-          Командa
-        </h3>
-      </div>
+      <h2
+        class="titleMain"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="teams"
-    >
-      <h3
-        class="teams__decor"
-      >
-        Командa
-      </h3>
-    </div>
+    <h2
+      class="titleMain"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
