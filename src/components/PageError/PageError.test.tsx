@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { PageError } from '../PageError/PageError';
+import { PageError } from './PageError';
 import { MemoryRouter } from 'react-router-dom';
 
 describe('PageError', () => {
@@ -28,7 +28,7 @@ describe('PageError', () => {
         <PageError />
       </MemoryRouter>
     );
-    const buttonElement = screen.getByRole('button', { type: 'button' });
+    const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
 });
