@@ -28,7 +28,7 @@ export const NewsList = (props:{currentItems:IListNews[]}) => {
       <div className={s.news__wrap}>
         {/* <Loader /> */}
         {currentItems &&
-          currentItems.map((item:IListNews) => (
+          currentItems.map((item) => (
             <div className={s.news__inner} key={item.id}>
               <div className={s.news__imgWrap}>
                 <Link key={item.id} to={`/news/${item.id}`}>

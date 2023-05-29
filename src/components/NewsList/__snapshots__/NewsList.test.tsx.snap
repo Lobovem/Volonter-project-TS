@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsList renders NewsList component 1`] = `
+<div>
+  <div
+    class="news"
+  >
+    <h3
+      class="news__decor"
+    >
+      Новини
+    </h3>
+    <div
+      class="news__wrap"
+    >
+      <div
+        class="news__inner"
+      >
+        <div
+          class="news__imgWrap"
+        >
+          <a
+            href="/news/1"
+          >
+            <img
+              alt="news.jpg"
+              class="news__img"
+              src="/img/slider-news-1.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="news__textBox"
+        >
+          <div
+            class="news__textWrap"
+          >
+            <a
+              class="news__linkAlt"
+              href="/news/1"
+            >
+              <h2
+                class="titleMain"
+              >
+                Якась важлива новина 1
+              </h2>
+            </a>
+            <p
+              class="news__desc"
+            >
+              За допомогою онлайн -генератора тексту ви можете обробляти свій особистий Lorem Ipsum , збагачуючи його html -елементами, які визначають його структуру, з можливістю вставляти зовнішні посилання, але не тільки. Фактично, вставляючи будь -який фантастичний текст або відомий текст, це вірш, промова, літературний уривок, текст пісні тощо, наш текстовий генератор забезпечить випадкове виділення термінів і кроків для створення власного ексклюзивного Lorem Ipsum. Фактично.
+            </p>
+          </div>
+          <a
+            class="news__link"
+            href="/news/1"
+          >
+            Читати повністю
+          </a>
+        </div>
+      </div>
+      <div
+        class="news__inner"
+      >
+        <div
+          class="news__imgWrap"
+        >
+          <a
+            href="/news/2"
+          >
+            <img
+              alt="news.jpg"
+              class="news__img"
+              src="/img/slider-news-2.jpg"
+            />
+          </a>
+        </div>
+        <div
+          class="news__textBox"
+        >
+          <div
+            class="news__textWrap"
+          >
+            <a
+              class="news__linkAlt"
+              href="/news/2"
+            >
+              <h2
+                class="titleMain"
+              >
+                Якась важлива новина 2
+              </h2>
+            </a>
+            <p
+              class="news__desc"
+            >
+              За допомогою онлайн -генератора тексту ви можете обробляти свій особистий Lorem Ipsum , збагачуючи його html -елементами, які визначають його структуру, з можливістю вставляти зовнішні посилання, але не тільки. Фактично, вставляючи будь -який фантастичний текст або відомий текст, це вірш, промова, літературний уривок, текст пісні тощо, наш текстовий генератор забезпечить випадкове виділення термінів і кроків для створення власного ексклюзивного Lorem Ipsum. Фактично.
+            </p>
+          </div>
+          <a
+            class="news__link"
+            href="/news/2"
+          >
+            Читати повністю
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

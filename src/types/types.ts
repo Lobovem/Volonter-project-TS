@@ -12,8 +12,8 @@ export interface IListNews {
   desc: string;
   photoMain: string;
   photoList: string[];
-  path: string;
-  breadcrumbs: string;
+  path?: string;
+  breadcrumbs?: string;
 }
 
 export interface IInputDataForm{
