@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { listMenuSelector, burgerMenuSelector, changeBurgerState } from '../../redux/slice/contentSlice';
-import './style.scss';
 import s from './Menu.module.scss';
 
 export const Menu = () => {
@@ -17,7 +16,7 @@ export const Menu = () => {
             if (item.show)
               return (
                 <li key={item.id} className={s.menu__item}>
-                  <NavLink to={item.path} className={s.menu__link} activeclassname="active">
+                  <NavLink to={item.path}  className={({ isActive }) => isActive ? `${s.menu__link} ${s.menu__linkActive}` : s.menu__link}>
                     {item.title}
                   </NavLink>
                 </li>

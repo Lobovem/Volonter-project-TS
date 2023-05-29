@@ -10,11 +10,13 @@ Object {
       >
         <a
           class="langWrap__link langWrap__link_active"
+          href="/test"
         >
           UA
         </a>
         <a
           class="langWrap__link"
+          href="/test"
         >
           EN
         </a>
@@ -27,11 +29,13 @@ Object {
     >
       <a
         class="langWrap__link langWrap__link_active"
+        href="/test"
       >
         UA
       </a>
       <a
         class="langWrap__link"
+        href="/test"
       >
         EN
       </a>

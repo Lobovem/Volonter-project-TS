@@ -10,7 +10,7 @@ describe('LangSite` component', () => {
     const component = render(
       <Provider store={store}>
         <Router>
-          <LangSite />
+          <LangSite href='/test' />
         </Router>
       </Provider>
     );
