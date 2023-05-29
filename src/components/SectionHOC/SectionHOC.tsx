@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { AboutUs } from '../AboutUs/AboutUs';
 import { News } from '../News/News';
 import { OurResult } from '../OurResult/OurResult';
@@ -13,8 +13,9 @@ import s from './SectionHOC.module.scss';
 import { GetHelp } from '../GetHelp/GetHelp';
 import { UserConditions } from '../UserConditions/UserConditions';
 import { DonateAll } from '../DonateAll/DonateAll';
+import { SectionHOCProps } from '../../types/types';
 
-export const SectionHOC = (Component) => (props) =>
+export const SectionHOC = (Component: ComponentType<SectionHOCProps>) => (props:SectionHOCProps) =>
   (
     <section className={s[props.classNameSection]}>
       <div className={s[props.classNameSectionWrap]}>

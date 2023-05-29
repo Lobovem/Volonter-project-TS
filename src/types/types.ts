@@ -54,3 +54,11 @@ export interface ILangSiteProps {
 export interface IPageClickEvent {
   selected: number;
 }
+
+export interface SectionHOCProps {
+  classNameSection: string;
+  classNameSectionWrap: string;
+  classNameTitleSection: string;
+  titleSection: string;
+  itemsPerPage: number;
+}
