@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { addFormData } from '../redux/slice/contentSlice';
-import { IListMenu, IListNews } from '../types/types';
+import { IInputDataForm, IListMenu, IListNews } from '../types/types';
 
 //example fetch response
 export const fetchMenu = createAsyncThunk<IListMenu[]>('content/fetchMenu', async () => {
@@ -46,7 +46,7 @@ export const fetchNews = createAsyncThunk<IListNews[]>('content/fetchNews', asyn
 // });
 
 //example axios response
-export const fetchOneNews = createAsyncThunk('content/fetchOneNews', async (id) => {
+export const fetchOneNews = createAsyncThunk<IListNews>('content/fetchOneNews', async (id) => {
   try {
     const response = await fetch(`https://base-twmn.onrender.com/news/${id}`);
     if (!response.ok) {
@@ -59,7 +59,7 @@ export const fetchOneNews = createAsyncThunk('content/fetchOneNews', async (id) 
   }
 });
 
-export const postFormData = createAsyncThunk('content/postFormData', async (imputDataForm, { dispatch }) => {
+export const postFormData = createAsyncThunk<void, IInputDataForm>('content/postFormData', async (imputDataForm, { dispatch }) => {
   try {
     const response = await fetch('https://base-twmn.onrender.com/formData', {
       method: 'POST',
@@ -76,7 +76,7 @@ export const postFormData = createAsyncThunk('content/postFormData', async (impu
     dispatch(addFormData(imputDataForm));
 
     return;
-  } catch (error: any) {
+  } catch (error:any) {
     throw new Error(error.message);
   }
 });

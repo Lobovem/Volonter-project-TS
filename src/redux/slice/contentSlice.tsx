@@ -21,7 +21,7 @@ export const contentSlice = createSlice({
     changeBurgerState: (state, action:PayloadAction<boolean>) => {
       state.burgerState = action.payload;
     },
-    addFormData: (state) => {
+    addFormData: (state,action: PayloadAction<IInputDataForm>) => {
       state.formData = [...state.formData, state.inputDataForm];
     },
     addInputDataForm: (state, action: PayloadAction<IInputDataForm>) => {
@@ -60,7 +60,7 @@ export const contentSlice = createSlice({
       // .addCase(fetchOneNews/pending', (state) => {
       //   state.isLoading = true;
       // })
-      .addCase(fetchOneNews.fulfilled, (state, action:PayloadAction<IListNews[]>) => {
+      .addCase(fetchOneNews.fulfilled, (state, action:PayloadAction<IListNews>) => {
         state.isLoading = false;
         state.oneNews = action.payload;
       })
