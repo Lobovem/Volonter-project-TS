@@ -11,7 +11,7 @@ import { BtnSliders } from '../../kit/BtnSliders/BtnSliders';
 export const SliderFifth = (props) => {
   const { news } = props;
 
-  console.log('oneNews', news);
+  console.log('news', news);
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);

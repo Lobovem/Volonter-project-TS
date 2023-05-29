@@ -16,22 +16,19 @@ export const OneNews = () => {
     dispatch(fetchOneNews(id));
   }, [id]);
 
-  const oneNews = useSelector(oneNewsSelector);
-
-  
-  
+  const news = useSelector(oneNewsSelector);
 
   return (
     <>
       <div className={s.simpleNews}>
-        <div key={oneNews.id}>
-          <h1 className={s.simpleNews__title}>{oneNews.title}</h1>
+        <div key={news.id}>
+          <h1 className={s.simpleNews__title}>{news.title}</h1>
           <div className={s.simpleNews__wrap}>
             <h3 className={s.simpleNews__decor}>Новини</h3>
             <div>
-              <p className={s.simpleNews__text}>{oneNews.desc}</p>
+              <p className={s.simpleNews__text}>{news.desc}</p>
             </div>
-            <SliderFifth news={oneNews}></SliderFifth>
+            <SliderFifth news={news}></SliderFifth>
           </div>
         </div>
       </div>
