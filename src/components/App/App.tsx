@@ -17,9 +17,11 @@ import { fetchMenu, fetchNews } from '../../api/api';
 import s from './App.module.scss';
 import { Route, Routes } from 'react-router-dom';
 import { IRootState } from '../../types/types';
+import { AppDispatch } from '../../redux/config/store';
 
-export const App = () => {
-  const dispatch = useDispatch();
+
+export const App: React.FC = () => {
+  const dispatch: AppDispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMenu());

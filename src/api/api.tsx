@@ -1,26 +1,27 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { addFormData } from '../redux/slice/contentSlice';
+import { IListMenu, IListNews } from '../types/types';
 
 //example fetch response
-export const fetchMenu = createAsyncThunk('content/fetchMenu', async () => {
+export const fetchMenu = createAsyncThunk<IListMenu[]>('content/fetchMenu', async () => {
   try {
     const response = await fetch('https://base-twmn.onrender.com/listMenu');
-    if (!response.status === 200) {
+    if (!response.ok) {
       throw new Error('Error fetching news list');
     }
     const data = await response.json();
     return data;
-  } catch (error) {
+  } catch (error:any) {
     throw new Error(error.message);
   }
 });
 
 //example response with .then
-export const fetchNews = createAsyncThunk('content/fetchNews', async () => {
+export const fetchNews = createAsyncThunk<IListNews[]>('content/fetchNews', async () => {
   try {
     const response = await fetch('https://base-twmn.onrender.com/news').then((data) => data.json());
     return response;
-  } catch (error) {
+  } catch (error:any) {
     throw new Error(error.message);
   }
 });
@@ -48,12 +49,12 @@ export const fetchNews = createAsyncThunk('content/fetchNews', async () => {
 export const fetchOneNews = createAsyncThunk('content/fetchOneNews', async (id) => {
   try {
     const response = await fetch(`https://base-twmn.onrender.com/news/${id}`);
-    if (!response.status === 200) {
+    if (!response.ok) {
       throw new Error('Error fetching news list');
     }
     const data = await response.json();
     return data;
-  } catch (error) {
+  } catch (error:any) {
     throw new Error(error.message);
   }
 });
@@ -68,14 +69,14 @@ export const postFormData = createAsyncThunk('content/postFormData', async (impu
       body: JSON.stringify(imputDataForm),
     });
 
-    if (!response.status === 200) {
+    if (!response.ok) {
       throw new Error('Can not post data');
     }
 
     dispatch(addFormData(imputDataForm));
 
     return;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error.message);
   }
 });
