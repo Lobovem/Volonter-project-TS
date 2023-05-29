@@ -7,15 +7,13 @@ import 'swiper/scss/navigation';
 import s from './SliderFifth.module.scss';
 import { useRef, useState } from 'react';
 import { BtnSliders } from '../../kit/BtnSliders/BtnSliders';
+import { SliderFifthProps } from '../../../types/types';
 
-export const SliderFifth = (props:any) => {
+export const SliderFifth = (props:SliderFifthProps) => {
   const { news } = props;
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
-  // const listPhoto = news.find((item) => item.photoList);
-
   const [init, setInit] = useState(false);
 
   return (
@@ -59,7 +57,7 @@ export const SliderFifth = (props:any) => {
       >
         <>
           {news.photoList &&
-            news.photoList.map((item: string, index:number) => (
+            news.photoList.map((item, index) => (
               <SwiperSlide className={s.slider__item} key={index}>
                 <div className={s.slider__itemWrap}>
                   <img className={s.slider__img} src={item} alt={item} />

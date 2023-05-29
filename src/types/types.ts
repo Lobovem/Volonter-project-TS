@@ -27,7 +27,7 @@ export interface IContentState {
   listMenu: IListMenu[],
   listNews: IListNews[],
   oneNews: IListNews,
-  formData: IInputDataForm[] | [],
+  formData: IInputDataForm[],
   inputDataForm: IInputDataForm,
   isLoading: boolean,
   error: string | undefined,
@@ -66,3 +66,7 @@ export interface ISectionHOCProps extends IPaginationProps {
 export interface IPaginationProps {
   itemsPerPage?: any;
 }
+
+export type SliderFifthProps = {
+  news: IListNews;
+};
