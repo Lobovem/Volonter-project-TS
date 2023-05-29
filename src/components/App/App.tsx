@@ -14,7 +14,7 @@ import { PageContacts } from '../PageContacts/PageContacts';
 import { PageDonate } from '../PageDonate/PageDonate';
 import { Loader } from '../Loader/Loader';
 import { fetchMenu, fetchNews } from '../../api/api';
-import s from './app.module.scss';
+import s from './App.module.scss';
 import { Route, Routes } from 'react-router-dom';
 
 export const App = () => {
