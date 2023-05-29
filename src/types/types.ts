@@ -46,3 +46,7 @@ export interface BtnProps {
   prevRef?: any;
   nextRef?: any;
 }
+
+export interface LangSiteProps {
+  href: string;
+}
