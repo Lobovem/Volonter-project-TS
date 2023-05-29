@@ -28,7 +28,7 @@ describe('Banner component', () => {
         <Banner />
       </Router>
     );
-    const buttonElement = screen.getByRole('button', { type: 'button' });
+    const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
 
