@@ -5,13 +5,13 @@ describe('Btn', () => {
   //render component
   test('renders btn component', () => {
     // eslint-disable-next-line testing-library/render-result-naming-convention
-    const component = render(<Btn />);
+    const component = render(<Btn title="test" className='test' />);
     expect(component).toMatchSnapshot();
   });
 
   //test title
   test('renders btn component with title', () => {
-    render(<Btn title="test" />);
+    render(<Btn title="test" className='test' />);
     const title = screen.getByText(/test/i);
     expect(title).toBeInTheDocument();
   });
@@ -19,7 +19,7 @@ describe('Btn', () => {
   //test click
   test('renders btn component with click', () => {
     const handleClick = jest.fn();
-    render(<Btn onClick={handleClick} />);
+    render(<Btn title="test" className='test' onClick={handleClick} />);
     const btn = screen.getByRole('button');
     btn.click();
     expect(handleClick).toHaveBeenCalledTimes(1);

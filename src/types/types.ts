@@ -37,3 +37,10 @@ export interface IContentState {
 export interface IRootState {
   content: IContentState;
 }
+
+export interface BtnProps {
+  title: string;
+  onClick?: () => void;
+  className: string;
+  type?: "button" | "submit" | "reset";
+}

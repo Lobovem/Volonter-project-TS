@@ -6,14 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="undefined"
-      />
+        class="test"
+      >
+        test
+      </button>
     </div>
   </body>,
   "container": <div>
     <button
-      class="undefined"
-    />
+      class="test"
+    >
+      test
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
