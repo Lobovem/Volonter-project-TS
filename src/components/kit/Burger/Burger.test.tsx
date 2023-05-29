@@ -58,8 +58,8 @@ describe('Burger', () => {
     const dispatch = jest.fn();
     const burgerState = false;
 
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(burgerState);
+    (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(burgerState);
 
     render(
       <Provider store={store}>
