@@ -5,7 +5,7 @@ describe('BtnSliders', () => {
   //render component
   test('renders btn component', () => {
     // eslint-disable-next-line testing-library/render-result-naming-convention
-    const component = render(<BtnSliders />);
+    const component = render(<BtnSliders className='test' />);
     expect(component).toMatchSnapshot();
   });
 });

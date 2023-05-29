@@ -1,6 +1,8 @@
+import { BtnProps } from '../../../types/types';
 import s from './BtnSliders.module.scss';
 
-export const BtnSliders = ({ prevRef, nextRef, className }) => {
+export const BtnSliders = (props:BtnProps) => {
+  const { prevRef, nextRef, className } = props;
   return (
     <div className={s[className]}>
       <button className={s.btnSlider__prev} ref={prevRef}></button>

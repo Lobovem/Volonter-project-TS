@@ -39,8 +39,10 @@ export interface IRootState {
 }
 
 export interface BtnProps {
-  title: string;
+  title?: string;
   onClick?: () => void;
   className: string;
   type?: "button" | "submit" | "reset";
+  prevRef?: any;
+  nextRef?: any;
 }
