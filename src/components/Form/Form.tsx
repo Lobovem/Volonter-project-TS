@@ -5,10 +5,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addInputDataForm, inputDataFormSelector } from '../../redux/slice/contentSlice';
 import { postFormData } from '../../api/api';
 import s from './Form.module.scss';
+import { AppDispatch } from '../../redux/config/store';
 
 export const Form = () => {
   const [sendState, setSendState] = useState(false);
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const imputDataForm = useSelector(inputDataFormSelector);
 
   const handleChangeState = () => {
@@ -16,14 +17,14 @@ export const Form = () => {
     setTimeout(setSendState, 3000);
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     handleChangeState();
     dispatch(postFormData(imputDataForm));
     dispatch(addInputDataForm({ id: '', name: '', email: '', textarea: '' }));
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     //need do ...inputDataForm that copy all data from inputDataForm(example - name, email and etc)
     dispatch(addInputDataForm({ ...imputDataForm, [e.target.id]: e.target.value }));
   };
