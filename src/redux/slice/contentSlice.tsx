@@ -1,9 +1,9 @@
-import { createSlice,ActionReducerMapBuilder } from '@reduxjs/toolkit';
-import { IInputDataForm, IRootState, IListMenu, IListNews } from '../../types/types';
+import { createSlice } from '@reduxjs/toolkit';
+import { IInputDataForm, IRootState, IListMenu, IListNews, IContentState } from '../../types/types';
 import {  PayloadAction } from '@reduxjs/toolkit';
 import { fetchMenu, fetchNews, fetchOneNews } from '../../api/api';
 
-const initialState: IRootState = {
+const initialState: IContentState = {
   listMenu: [],
   listNews: [],
   oneNews: {},
@@ -71,12 +71,12 @@ export const contentSlice = createSlice({
   },
 });
 
-export const burgerMenuSelector = (state) => state.content.burgerState;
-export const listMenuSelector = (state) => state.content.listMenu;
-export const listNewsSelector = (state) => state.content.listNews;
-export const oneNewsSelector = (state) => state.content.oneNews;
-export const inputDataFormSelector = (state) => state.content.inputDataForm;
-export const formDataSelector = (state) => state.content.formData;
+export const burgerMenuSelector = (state:IRootState) => state.content.burgerState;
+export const listMenuSelector = (state:IRootState) => state.content.listMenu;
+export const listNewsSelector = (state:IRootState) => state.content.listNews;
+export const oneNewsSelector = (state:IRootState) => state.content.oneNews;
+export const inputDataFormSelector = (state:IRootState) => state.content.inputDataForm;
+export const formDataSelector = (state:IRootState) => state.content.formData;
 
 export const { changeBurgerState, addFormData, addInputDataForm } = contentSlice.actions;
 

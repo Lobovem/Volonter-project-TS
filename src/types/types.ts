@@ -23,13 +23,17 @@ export interface IInputDataForm{
   textarea: string;
 }
 
-export interface IRootState {
+export interface IContentState {
   listMenu: IListMenu[] | [],
   listNews: IListNews[] | [],
   oneNews: IListNews | {},
   formData: IInputDataForm[] | [],
   inputDataForm: IInputDataForm,
   isLoading: boolean,
-  error: string,
+  error: string | undefined,
   burgerState: boolean,
+}
+
+export interface IRootState {
+  content: IContentState;
 }

@@ -16,6 +16,7 @@ import { Loader } from '../Loader/Loader';
 import { fetchMenu, fetchNews } from '../../api/api';
 import s from './App.module.scss';
 import { Route, Routes } from 'react-router-dom';
+import { IRootState } from '../../types/types';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -25,8 +26,8 @@ export const App = () => {
     dispatch(fetchNews());
   }, [dispatch]);
 
-  const isLoading = useSelector((state) => state.content.isLoading);
-  const error = useSelector((state) => state.content.error);
+  const isLoading = useSelector((state:IRootState) => state.content.isLoading);
+  const error = useSelector((state:IRootState) => state.content.error);
 
   if (isLoading) {
     return (
