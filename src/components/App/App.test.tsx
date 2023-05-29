@@ -4,10 +4,10 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 import { store } from '../../redux/config/store';
 import { App } from './App';
 
-jest.mock('../../api/api', () => ({
-  fetchMenu: jest.fn(),
-  fetchNews: jest.fn(),
-}));
+// jest.mock('../../api/api', () => ({
+//   fetchMenu: jest.fn(),
+//   fetchNews: jest.fn(),
+// }));
 
 jest.mock('react-redux', () => {
   const originalModule = jest.requireActual('react-redux');

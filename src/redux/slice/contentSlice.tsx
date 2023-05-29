@@ -47,6 +47,7 @@ export const contentSlice = createSlice({
         state.isLoading = false;
         state.error = action.error.message;
       })
+      
       .addCase(fetchNews.pending, (state) => {
         state.isLoading = true;
       })
@@ -80,6 +81,5 @@ export const inputDataFormSelector = (state:IRootState) => state.content.inputDa
 export const formDataSelector = (state:IRootState) => state.content.formData;
 
 export const { changeBurgerState, addFormData, addInputDataForm } = contentSlice.actions;
-
 export default contentSlice.reducer;
 
