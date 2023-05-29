@@ -1,0 +1,39 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.slider {
+  &__wrapper {
+    @include xl-min {
+      justify-content: center !important;
+    }
+  }
+
+  &__itemWrap {
+    background: linear-gradient(176.79deg, #025FA7 7.56%, #1682D4 33.94%, #00B0D0 57.25%, #09D3F6 77.4%, #42E3FF 96.98%);
+    box-shadow: 0px 4px 15px rgba(2, 95, 167, 0.08);
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-24;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-white;
+    mix-blend-mode: normal;
+    border-bottom: 2px solid $color-white;
+    padding: 36px;
+  }
+
+  &__desc {
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    line-height: 18px;
+    color: $color-white;
+    mix-blend-mode: normal;
+    margin: 36px 30px;
+  }
+}

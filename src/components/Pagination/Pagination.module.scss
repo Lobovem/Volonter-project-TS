@@ -1,0 +1,46 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+
+.pagination {
+  height: 300px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-weight: $font-weight-400;
+  font-size: $font-size-18;
+  line-height: 18px;
+  color: $color-black;
+  padding: 0;
+  margin: 0;
+
+  &__btn {
+    color: $color-main;
+    font-size: 26px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  &__link {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.active {
+  background: $color-main;
+  color: $color-white;
+}
+
+.disabled {
+  color: $color-grey-dark;
+}

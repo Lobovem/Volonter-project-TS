@@ -1,0 +1,87 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.donateAll {
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-16;
+    line-height: 16px;
+    color: $color-black;
+    margin-bottom: 30px;
+
+    @include lg-min {
+      font-size: $font-size-24;
+      line-height: 24px;
+      margin-bottom: 60px;
+
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+  }
+
+  &__wrapPay {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    @media (min-width:750px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__wrapIcon {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(2, 108, 167, 0.08);
+    border-radius: 14px;
+    padding: 50px;
+  }
+
+  &__wrapIconAlt {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(2, 108, 167, 0.08);
+    border-radius: 14px;
+    padding: 50px;
+
+    @media(min-width:750px) {
+      &:last-child {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    }
+  }
+
+  &__wrapText {
+    margin-top: -20px;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    font-weight: $font-weight-500;
+    font-size: $font-size-16;
+    line-height: 16px;
+    color: $color-black;
+    margin-bottom: 5px;
+  }
+
+  &__desc {
+    font-weight: $font-weight-400;
+    font-size: $font-size-14;
+    line-height: 16px;
+    color: $color-black;
+    word-break: break-word;
+    margin-bottom: 15px;
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+  }
+}

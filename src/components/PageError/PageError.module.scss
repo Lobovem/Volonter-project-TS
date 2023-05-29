@@ -1,0 +1,65 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.pageError {
+  &__wrap {
+    @include layoutMain;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 110px 0;
+
+    @include lg-min {
+      gap: 80px
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-128;
+    line-height: 128px;
+    mix-blend-mode: normal;
+    mix-blend-mode: normal;
+    background: $gradient-main;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include lg-min {
+      font-size: $font-size-300;
+      line-height: 300px;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-20;
+    font-weight: $font-weight-500;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+    margin-bottom: 15px;
+
+    @include lg-min {
+      font-size: $font-size-24;
+      line-height: 24px;
+    }
+  }
+
+  &__footerWrap {
+    background: $color-grey;
+    height: 125px;
+
+    @include lg-min {
+      height: 275px;
+    }
+
+  }
+
+  &__line {
+    height: 30px;
+    background: $gradient-main;
+  }
+}

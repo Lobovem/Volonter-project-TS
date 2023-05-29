@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders Pagination component 1`] = `
+<div>
+  <div
+    class="news"
+  >
+    <h3
+      class="news__decor"
+    >
+      Новини
+    </h3>
+    <div
+      class="news__wrap"
+    />
+  </div>
+  <ul
+    aria-label="Pagination"
+    class="pagination"
+    role="navigation"
+  >
+    <li
+      class="pagination__btn disabled"
+    >
+      <a
+        aria-disabled="true"
+        aria-label="Previous page"
+        class=" disabled"
+        rel="prev"
+        role="button"
+        tabindex="-1"
+      >
+        &lt;
+      </a>
+    </li>
+    <li
+      class="pagination__btn"
+    >
+      <a
+        aria-disabled="false"
+        aria-label="Next page"
+        class=""
+        rel="next"
+        role="button"
+        tabindex="0"
+      >
+        &gt;
+      </a>
+    </li>
+  </ul>
+</div>
+`;

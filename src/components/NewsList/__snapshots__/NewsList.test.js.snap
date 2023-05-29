@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsList renders NewsList component 1`] = `
+<div>
+  <div
+    class="news"
+  >
+    <h3
+      class="news__decor"
+    >
+      Новини
+    </h3>
+    <div
+      class="news__wrap"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OneNews renders OneNews component 1`] = `
+<div>
+  <div
+    class="simpleNews"
+  >
+    <div>
+      <h1
+        class="simpleNews__title"
+      >
+        Новина
+      </h1>
+      <div
+        class="simpleNews__wrap"
+      >
+        <h3
+          class="simpleNews__decor"
+        >
+          Новини
+        </h3>
+        <div>
+          <p
+            class="simpleNews__text"
+          >
+            News
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="youtubeVideo"
+  >
+    <div
+      class="youtubeVideo__wrapIframe"
+    >
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen=""
+        class="youtubeVideo__iframe"
+        frameborder="0"
+        src="https://www.youtube.com/embed/yz9zqm-TAIg"
+        title="YouTube video player"
+      />
+    </div>
+    <h2
+      class="titleMain"
+    >
+      Допомога нашим братам та сестрам
+    </h2>
+    <p
+      class="youtubeVideo__desc"
+    >
+      Для того щоб записатись на отримання допомоги, та не вистоювати у чергах, потрібно заповнити реєстраційну форму. Вона автоматично реєструє заявку, та надсилає вам на пошту підтвердження реєстрації. Для того щоб записатись на отримання допомоги, та не вистоювати у чергах, потрібно заповнити реєстраційну форму. Вона автоматично реєструє заявку, та надсилає вам на пошту підтвердження реєстрації.
+    </p>
+    <p
+      class="youtubeVideo__desc"
+    >
+      За допомогою онлайн -генератора тексту ви можете обробляти свій особистий Lorem Ipsum , збагачуючи його html -елементами, які визначають його структуру, з можливістю вставляти зовнішні посилання, але не тільки. Фактично, вставляючи будь -який фантастичний текст або відомий текст, це вірш, промова, літературний уривок, текст пісні тощо, наш текстовий генератор забезпечить випадкове виділення термінів і кроків для створення власного ексклюзивного Lorem Ipsum. Фактично. Нашою першочерговою метою є вирішення нагальних проблем ЗСУ. За допомогою онлайн -генератора тексту ви можете обробляти свій особистий Lorem Ipsum , збагачуючи його html -елементами, які визначають його структуру, з можливістю вставляти зовнішні посилання, але не тільки...
+    </p>
+  </div>
+</div>
+`;

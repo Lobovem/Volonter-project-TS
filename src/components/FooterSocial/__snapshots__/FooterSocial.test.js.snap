@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FooterSocial\` component renders FooterSocial component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="social"
+      >
+        <div
+          class="social__wrap"
+        >
+          <h2
+            class="social__title"
+          >
+            соціальні мережі
+          </h2>
+          <a
+            class="social__wrapLink"
+            href="https://www.instagram.com/ukrhumbat/?igshid=YmMyMTA2M2Y="
+            target="blank"
+          >
+            <img
+              alt="icon-instagram.svg"
+              class="social__img"
+              src="/img/icon-instagram.svg"
+            />
+            <p
+              class="social__desc"
+            >
+              instagram
+            </p>
+          </a>
+          <a
+            class="social__wrapLink"
+            href="https://www.facebook.com/people/%D0%9C%D0%91%D0%A4-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D1%96%D1%82%D0%B0%D1%80%D0%BD%D0%B8%D0%B9-%D0%B1%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D0%BE%D0%BD/100085936770532/"
+            target="blank"
+          >
+            <img
+              alt="icon-facebook.svg"
+              class="social__img"
+              src="/img/icon-facebook.svg"
+            />
+            <p
+              class="social__desc"
+            >
+              facebook
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="social"
+    >
+      <div
+        class="social__wrap"
+      >
+        <h2
+          class="social__title"
+        >
+          соціальні мережі
+        </h2>
+        <a
+          class="social__wrapLink"
+          href="https://www.instagram.com/ukrhumbat/?igshid=YmMyMTA2M2Y="
+          target="blank"
+        >
+          <img
+            alt="icon-instagram.svg"
+            class="social__img"
+            src="/img/icon-instagram.svg"
+          />
+          <p
+            class="social__desc"
+          >
+            instagram
+          </p>
+        </a>
+        <a
+          class="social__wrapLink"
+          href="https://www.facebook.com/people/%D0%9C%D0%91%D0%A4-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D1%96%D1%82%D0%B0%D1%80%D0%BD%D0%B8%D0%B9-%D0%B1%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D0%BE%D0%BD/100085936770532/"
+          target="blank"
+        >
+          <img
+            alt="icon-facebook.svg"
+            class="social__img"
+            src="/img/icon-facebook.svg"
+          />
+          <p
+            class="social__desc"
+          >
+            facebook
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

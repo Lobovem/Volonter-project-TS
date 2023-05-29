@@ -1,0 +1,88 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.slider {
+  &__wrapper {
+    @include xl-min {
+      justify-content: center !important;
+    }
+  }
+
+  &__itemWrap {
+    border-radius: 15px;
+    width: 100%;
+    background: $color-grey;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+      padding: 70px 40px;
+    }
+
+    @include xl-min {
+      padding: 70px 70px;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-24;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-black;
+    mix-blend-mode: normal;
+    // padding: 10px 0;
+    padding: 30px 0;
+
+    @media(min-width: 768px) {}
+
+    @include xl-min {
+      padding: 30px 0 50px 0;
+    }
+  }
+
+
+  &__desc {
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: auto;
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+
+    @include xl-min {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    font-weight: $font-weight-600;
+    font-size: $font-size-14;
+    line-height: 14px;
+    color: $color-main;
+    text-decoration: none;
+    mix-blend-mode: normal;
+    text-align: right;
+    display: block;
+    margin-top: auto;
+
+    @include hoverAnimation;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}

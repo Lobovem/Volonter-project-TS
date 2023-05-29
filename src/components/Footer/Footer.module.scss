@@ -1,0 +1,92 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.footer {
+  position: relative;
+  background: linear-gradient(180deg, #025FA7 0%, #1682D4 53.31%, #00B0D0 87.89%, #09D3F6 124.3%, #42E3FF 153.83%);
+  border-radius: 0px;
+
+  &__img {
+    max-width: 133px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+
+    @include lg-min {
+      max-width: 224px;
+      top: -100px;
+
+    }
+  }
+
+  &__wrap {
+    @include layoutMaxPadding;
+    padding: 150px 0px 90px 00px;
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+
+    @media(min-width: 700px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    @include lg-min {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__descBox {
+    @include lg-min {
+      flex: 1;
+    }
+  }
+
+  &__desc {
+
+
+
+    font-weight: $font-weight-400;
+    font-size: $font-size-14;
+    line-height: 20px;
+    color: $color-white;
+    mix-blend-mode: normal;
+    padding-bottom: 40px;
+    margin: 0;
+
+  }
+
+  &__btnBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__copyright {
+
+
+
+    border-top: 2px solid $color-white;
+    padding-top: 40px;
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    line-height: 17px;
+    color: $color-white;
+    mix-blend-mode: normal;
+    margin-top: 70px;
+    width: 100%;
+
+    // text-align: center;
+    @include xs-min {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+
+.active {
+  color: $color-hover;
+}

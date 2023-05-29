@@ -1,0 +1,85 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.getHelp {
+
+  &__contentWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  }
+
+
+  &__imgWrap {
+    padding-bottom: 30px;
+    width: 100%;
+
+    @include lg-min {
+      flex: 1;
+      flex-basis: 40%;
+
+    }
+
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__textWrap {
+    @include lg-min {
+      flex: 1;
+      flex-basis: 60%;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-18;
+    line-height: 18px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    margin: 0 0 10px 0;
+
+    @include lg-min {
+      font-weight: $font-weight-500;
+      font-size: $font-size-24;
+      line-height: 24px;
+    }
+  }
+
+  &__descList {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    font-weight: $font-weight-400;
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+  }
+}

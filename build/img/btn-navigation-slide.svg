@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="74" height="74" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="74" id="filter0_d_1_406" width="74" x="0" y="0.28">
+   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+   <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+   <feOffset dy="4"/>
+   <feGaussianBlur stdDeviation="7.5"/>
+   <feComposite in2="hardAlpha" operator="out"/>
+   <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.372549 0 0 0 0 0.654902 0 0 0 0.08 0"/>
+   <feBlend in2="BackgroundImageFix"/>
+   <feBlend in="SourceGraphic" in2="effect1_dropShadow_1_406"/>
+  </filter>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g filter="url(#filter0_d_1_406)" id="svg_1" transform="rotate(0.744811 37.4958 36.7842)">
+   <circle cx="37.5" cy="36.78" fill="none" id="svg_2" r="21" stroke="#025FA7" transform="rotate(-90 37.5 36.78)"/>
+  </g>
+  <path d="m31.99,37.16l7.89,7.13c0.26,0.23 0.68,0.23 0.93,-0.01c0.25,-0.23 0.25,-0.6 0,-0.83l-7.43,-6.72l7.43,-6.71c0.26,-0.24 0.26,-0.61 0,-0.85c-0.25,-0.23 -0.67,-0.23 -0.93,0l-7.89,7.14c-0.26,0.24 -0.26,0.61 0,0.85z" fill="#025FA7" id="svg_3"/>
+ </g>
+</svg>

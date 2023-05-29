@@ -1,0 +1,32 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+
+
+.langWrap {
+
+  width: 92px;
+  height: 40px;
+  background: $color-main;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  @include md-min {
+    height: 100%;
+    margin-right: 12px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    mix-blend-mode: normal;
+    font-weight: $font-weight-600;
+    line-height: 16px;
+    text-align: center;
+
+    &_active {
+      color: $color-hover;
+    }
+  }
+}

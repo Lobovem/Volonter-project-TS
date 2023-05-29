@@ -1,0 +1,32 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.teams {
+  position: relative;
+
+
+  &__decor {
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    @media (min-width: 1500px) {
+
+      position: absolute;
+      display: block;
+      top: 210px;
+      left: -460px;
+      z-index: 0;
+      font-weight: $font-weight-500;
+      font-size: $font-size-165;
+      line-height: 165px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-grey;
+      mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+  }
+}

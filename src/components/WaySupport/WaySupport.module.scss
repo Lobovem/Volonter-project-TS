@@ -1,0 +1,31 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+
+.waySupport {
+  position: relative;
+
+  &__decor {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 1500px) {
+      position: absolute;
+      display: block;
+      top: 290px;
+      right: -570px;
+      z-index: 0;
+      font-weight: $font-weight-500;
+      font-size: $font-size-165;
+      line-height: 165px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-grey;
+      mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+  }
+}

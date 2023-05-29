@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageError renders PageError component 1`] = `
+<div>
+  <div
+    class="pageError"
+  >
+    <div
+      class="pageError__wrap"
+    >
+      <h1
+        class="pageError__title"
+      >
+        <span>
+          404
+        </span>
+      </h1>
+      <p
+        class="pageError__desc"
+      >
+        Упс! Щось пішло не так!
+      </p>
+      <a
+        href="/"
+      >
+        <button
+          class="btn"
+          type="button"
+        >
+          На головну
+        </button>
+      </a>
+    </div>
+    <div
+      class="pageError__footerWrap"
+    >
+      <div
+        class="pageError__line"
+      />
+    </div>
+  </div>
+</div>
+`;

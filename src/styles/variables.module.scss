@@ -1,0 +1,57 @@
+//fonts-family
+$font-family: 'Rubik', sans-serif;
+
+//fonts-weight
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+
+//font-size
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-30: 30px;
+$font-size-32: 32px;
+$font-size-38: 38px;
+$font-size-48: 48px;
+$font-size-128: 128px;
+$font-size-165: 165px;
+$font-size-300: 300px;
+
+
+
+//color
+$color-white: #fff;
+$color-black: #000000;
+$color-main: #025FA7;
+$color-hover: #FFD500;
+$color-grey: #F3F3F3;
+$color-grey-dark: #D9D9D9;
+$color-grey-light: #025fa714;
+$color-red: #C82E37;
+$color-green: #36B98F;
+$color-type: #1FB7D6;
+
+//background
+$gradient-main: linear-gradient(99.7deg, #025FA7 5.07%, #1682D4 32.97%, #00B0D0 60.87%, #09D3F6 88.76%, #42E3FF 116.66%);
+$gradient-hover: linear-gradient(98.35deg, #025FA7 5.18%, #1682D4 46.68%, #00B0D0 88.18%, #09D3F6 129.69%, #42E3FF 171.19%);
+$background-white: #fff;
+$background-grey: #F3F3F3;
+
+//layout
+$width-1440: min(100% - 80px, 1440px);
+$width-1330: min(100% - 80px, 1330px);
+$width-1195: min(100% - 80px, 1195px);
+
+//screen
+$ul: 1921px;
+$xl: 1400px;
+$lg: 1000px;
+$md: 870px;
+$sm: 621px;
+$xs: 480px;
+$xx: 420px;
+$ux: 321px;

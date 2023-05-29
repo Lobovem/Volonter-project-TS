@@ -1,0 +1,42 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.slider {
+  display: block !important;
+
+  @include xl-min {
+    padding-bottom: 50px !important;
+  }
+
+  &__itemWrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-20;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $color-black;
+
+    mix-blend-mode: normal;
+    max-width: 260px;
+    text-align: left;
+
+    @include xl-min {
+      font-size: $font-size-24;
+      line-height: 24px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,78 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.simpleNews {
+  position: relative;
+
+  &__decor {
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    @media (min-width: 1500px) {
+
+      position: absolute;
+      display: block;
+      top: 260px;
+      left: -430px;
+      z-index: 0;
+      font-weight: $font-weight-500;
+      font-size: $font-size-165;
+      line-height: 165px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-grey;
+      mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include xl-min {
+      display: flex;
+      flex-direction: row;
+      gap: 60px;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-32;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-black;
+    mix-blend-mode: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include lg-min {
+      font-size: $font-size-38;
+      line-height: 38px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__text {
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+
+    @include xl-min {
+      max-width: 250px;
+    }
+
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    margin-bottom: 20px;
+
+  }
+}

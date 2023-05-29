@@ -1,0 +1,144 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.news {
+  position: relative;
+
+  &__decor {
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    @media (min-width: 1500px) {
+
+      position: absolute;
+      display: block;
+      top: 150px;
+      left: -430px;
+      z-index: 0;
+      font-weight: $font-weight-500;
+      font-size: $font-size-165;
+      line-height: 165px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-grey;
+      mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    min-height: 500px;
+
+    @media (min-width:750px) {
+
+      div:nth-child(odd) div {
+        order: 0;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width:750px) {
+      gap: 20px;
+      flex-direction: row;
+      align-items: start;
+
+    }
+
+    @include lg-min {
+      gap: 60px;
+    }
+
+    @include xl-min {
+      gap: 100px;
+    }
+  }
+
+  &__imgWrap {
+    margin-bottom: 20px;
+    justify-content: center;
+
+    @media (min-width:750px) {
+      order: 1;
+    }
+  }
+
+  &__img {
+    max-width: 360px;
+    border-radius: 15px;
+  }
+
+  &__textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width:750px) {
+      gap: 40px;
+    }
+  }
+
+  &__textWrap {
+    position: relative;
+    max-height: 220px;
+    overflow: hidden;
+
+    &:before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100px;
+      content: "";
+      opacity: 1;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #fff 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #fff 100%);
+      -webkit-transition: opacity .25s;
+      -o-transition: opacity .25s;
+      transition: opacity .25s;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-right: auto;
+    font-weight: $font-weight-600;
+    font-size: $font-size-14;
+    line-height: 14px;
+    color: $color-main;
+    mix-blend-mode: normal;
+    text-decoration: none;
+
+    @include hoverAnimation;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__linkAlt {
+    text-decoration: none;
+  }
+}

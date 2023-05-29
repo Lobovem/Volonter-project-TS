@@ -1,0 +1,63 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+
+
+.aboutUs {
+  &__contentWrap {
+    @include lg-min {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  }
+
+  &__textWrap {
+    @include lg-min {
+      flex-basis: 65%;
+    }
+  }
+
+  &__img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__imgWrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include lg-min {
+      display: block;
+      flex-basis: 35%;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-18;
+    line-height: 18px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    padding: 20px 0;
+
+    @include lg-min {
+      font-size: $font-size-24;
+      line-height: 24px;
+      padding: 30px 0;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+  }
+}

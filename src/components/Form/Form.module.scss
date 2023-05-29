@@ -1,0 +1,209 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+
+.form {
+  &__wrap {
+    @media(min-width: 750px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @include lg-min {
+      gap: 50px;
+      padding-bottom: 50px;
+
+    }
+  }
+
+
+  &__img {
+    width: 100%;
+    background: $color-grey;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    @media(min-width: 750px) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__inner {
+    background: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 40px 50px;
+    box-shadow: 0px 4px 15px rgba(2, 95, 167, 0.08);
+    border-radius: 15px;
+    min-height: 550px;
+
+
+
+    @media(min-width: 750px) {
+      padding: 40px 30px;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-20;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-main;
+    background: $gradient-main;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+
+    @include lg-min {
+      font-size: $font-size-38;
+      line-height: 38px;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-14;
+    font-weight: $font-weight-600;
+    line-height: 17px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @include lg-min {
+      font-size: $font-size-24;
+      line-height: 24px;
+    }
+
+    @media (min-width: 1200px) {
+
+      margin-bottom: 80px;
+    }
+  }
+
+  &__inputTitle {
+    font-size: $font-size-14;
+    font-weight: $font-weight-600;
+    line-height: 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    @include lg-min {
+      font-size: $font-size-18;
+    }
+  }
+
+  &__input {
+    margin-bottom: 10px;
+    border: 2px solid $color-main;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    outline: none;
+
+
+    @include hoverAnimation;
+
+    &:hover {
+      border-color: $color-hover;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-type;
+    }
+
+
+    @media (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__textArea {
+    margin-bottom: 20px;
+    border: 2px solid $color-main;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+    margin-bottom: 50px;
+    resize: none;
+    outline: none;
+
+    @include lg-min {
+      margin-bottom: 40px;
+    }
+
+
+    @media (min-width: 1200px) {
+      margin-bottom: 80px;
+    }
+
+    @include hoverAnimation;
+
+    &:hover {
+      border-color: $color-hover;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-type;
+    }
+  }
+
+  &__btnWrap {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-main;
+
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__sending {
+    background: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px rgba(2, 95, 167, 0.08);
+    border-radius: 15px;
+    min-height: 550px;
+  }
+
+  &__sendingImg {
+    max-width: 100px;
+  }
+
+  &__sendingTitle {
+    text-align: center;
+    font-weight: $font-weight-500;
+    font-size: $font-size-24;
+    line-height: 24px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    max-width: 370px;
+
+    span {
+      color: $color-main;
+
+    }
+  }
+}

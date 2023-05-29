@@ -1,0 +1,65 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+
+.burger {
+  width: 40px;
+  height: 40px;
+  background: $color-main;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+
+  @include md-min {
+    display: none;
+  }
+
+  &__line {
+    position: absolute;
+    left: 6px;
+    display: flex;
+    width: 70%;
+    height: 2px;
+    transition: 0.25s ease-in-out;
+    opacity: 1;
+    background-color: $color-white;
+
+    &:nth-of-type(1) {
+      top: 25%;
+    }
+
+    &:nth-of-type(2) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &:nth-of-type(3) {
+      bottom: 25%;
+    }
+  }
+
+  &.active {
+    right: 5px;
+    position: fixed;
+    top: 5px;
+  }
+
+  &.active span {
+    z-index: 1000;
+
+    &:nth-of-type(1) {
+      top: 47%;
+
+      transform: rotate(135deg);
+    }
+
+    &:nth-of-type(2) {
+      left: -50px;
+      opacity: 0;
+    }
+
+    &:nth-of-type(3) {
+      top: 47%;
+      transform: rotate(-135deg);
+    }
+  }
+}

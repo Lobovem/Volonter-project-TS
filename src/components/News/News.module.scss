@@ -1,0 +1,77 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.sectionNews {
+  position: relative;
+
+  &__decor {
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    @media (min-width: 1500px) {
+
+      position: absolute;
+      display: block;
+      top: 150px;
+      left: -430px;
+      z-index: 0;
+      font-weight: $font-weight-500;
+      font-size: $font-size-165;
+      line-height: 165px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-grey;
+      mix-blend-mode: normal;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__inner {
+    @include xl-min {
+      display: flex;
+      gap: 60px;
+    }
+  }
+
+  &__textWrap {
+    @include xl-min {
+      max-width: 300px;
+    }
+  }
+
+  &__desc {
+    font-size: $font-size-14;
+    line-height: 21px;
+    color: $color-black;
+    mix-blend-mode: normal;
+    margin-bottom: 30px;
+
+    @include lg-min {
+      font-size: $font-size-16;
+    }
+
+    @include xl-min {
+      margin-bottom: 50px;
+
+    }
+  }
+
+  &__link {
+    display: block;
+    font-weight: $font-weight-600;
+    font-size: $font-size-14;
+    line-height: 14px;
+    color: $color-main;
+    mix-blend-mode: normal;
+    text-decoration: none;
+    margin-bottom: 30px;
+    @include hoverAnimation;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}

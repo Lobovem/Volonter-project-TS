@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DonateAll component renders DonateAll component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="donateAll"
+      >
+        <div
+          class="donateAll__wrap"
+        >
+          <h2
+            class="titleMain"
+          >
+            Маленькі кроки ведуть нас до великої ПЕРЕМОГИ!
+          </h2>
+          <h2
+            class="donateAll__title"
+          >
+            Ми не збираємо кошти і не просимо донати в будь-яких соцмережах. Все робимо своїми силами. Але, якщо хочете допомогти, ми не можемо відмовити вам в такому праві.
+          </h2>
+          <div
+            class="donateAll__wrapPay"
+          >
+            <div
+              class="donateAll__wrapIcon"
+            >
+              <img
+                alt="icon-privat-bank.svg"
+                class="donateAll__img"
+                src="/img/icon-privat-bank.svg"
+              />
+              <p
+                class="donateAll__text"
+              >
+                Рахунок (Гривня)
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                БО МБФ УКРАЇНСЬКИЙ ГУМАНІТАРНИЙ БАТАЛЬЙОН
+              </p>
+              <p
+                class="donateAll__text"
+              >
+                ІПН/ЄДРПОУ
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                44746691
+              </p>
+              <p
+                class="donateAll__text"
+              >
+                IBAN
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                UA533052990000026004031220892
+              </p>
+            </div>
+            <div
+              class="donateAll__wrapIcon"
+            >
+              <img
+                alt="icon-mono.png"
+                class="donateAll__img"
+                src="/img/icon-mono.png"
+              />
+              <p
+                class="donateAll__text"
+              >
+                Карта (Гривна)
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                3758640000000000
+              </p>
+            </div>
+            <div
+              class="donateAll__wrapIcon"
+            >
+              <img
+                alt="icon-swift.svg"
+                class="donateAll__img"
+                src="/img/icon-swift.svg"
+              />
+              <p
+                class="donateAll__text"
+              >
+                SWIFT (Прекази у гривнях)
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                IBAN UA00 000000 00000 00000000000000
+              </p>
+            </div>
+            <div
+              class="donateAll__wrapIcon"
+            >
+              <img
+                alt="icon-pay-pal.svg"
+                class="donateAll__img"
+                src="/img/icon-pay-pal.svg"
+              />
+              <p
+                class="donateAll__text"
+              >
+                Перейти до PayPal
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                namecompany@gmail.com
+              </p>
+            </div>
+            <div
+              class="donateAll__wrapIconAlt"
+            >
+              <img
+                alt="icon-bitcoin.svg"
+                class="donateAll__img"
+                src="/img/icon-bitcoin.svg"
+              />
+              <div
+                class="donateAll__wrapText"
+              >
+                <p
+                  class="donateAll__text"
+                >
+                  BTC
+                </p>
+                <p
+                  class="donateAll__desc"
+                >
+                  0x0000000000000000000000000000000000000000
+                </p>
+              </div>
+              <img
+                alt="icon-ethereum.svg"
+                class="donateAll__img"
+                src="/img/icon-ethereum.svg"
+              />
+              <div
+                class="donateAll__wrapText"
+              >
+                <p
+                  class="donateAll__text"
+                >
+                  ETH
+                </p>
+                <p
+                  class="donateAll__desc"
+                >
+                  0x00000000000000000000000000000000
+                </p>
+              </div>
+              <img
+                alt="icon-tether.svg"
+                class="donateAll__img"
+                src="/img/icon-tether.svg"
+              />
+              <div
+                class="donateAll__wrapText"
+              >
+                <p
+                  class="donateAll__text"
+                >
+                  USDT
+                </p>
+                <p
+                  class="donateAll__desc"
+                >
+                  TG00000000000000000000000000000000
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="donateAll"
+    >
+      <div
+        class="donateAll__wrap"
+      >
+        <h2
+          class="titleMain"
+        >
+          Маленькі кроки ведуть нас до великої ПЕРЕМОГИ!
+        </h2>
+        <h2
+          class="donateAll__title"
+        >
+          Ми не збираємо кошти і не просимо донати в будь-яких соцмережах. Все робимо своїми силами. Але, якщо хочете допомогти, ми не можемо відмовити вам в такому праві.
+        </h2>
+        <div
+          class="donateAll__wrapPay"
+        >
+          <div
+            class="donateAll__wrapIcon"
+          >
+            <img
+              alt="icon-privat-bank.svg"
+              class="donateAll__img"
+              src="/img/icon-privat-bank.svg"
+            />
+            <p
+              class="donateAll__text"
+            >
+              Рахунок (Гривня)
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              БО МБФ УКРАЇНСЬКИЙ ГУМАНІТАРНИЙ БАТАЛЬЙОН
+            </p>
+            <p
+              class="donateAll__text"
+            >
+              ІПН/ЄДРПОУ
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              44746691
+            </p>
+            <p
+              class="donateAll__text"
+            >
+              IBAN
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              UA533052990000026004031220892
+            </p>
+          </div>
+          <div
+            class="donateAll__wrapIcon"
+          >
+            <img
+              alt="icon-mono.png"
+              class="donateAll__img"
+              src="/img/icon-mono.png"
+            />
+            <p
+              class="donateAll__text"
+            >
+              Карта (Гривна)
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              3758640000000000
+            </p>
+          </div>
+          <div
+            class="donateAll__wrapIcon"
+          >
+            <img
+              alt="icon-swift.svg"
+              class="donateAll__img"
+              src="/img/icon-swift.svg"
+            />
+            <p
+              class="donateAll__text"
+            >
+              SWIFT (Прекази у гривнях)
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              IBAN UA00 000000 00000 00000000000000
+            </p>
+          </div>
+          <div
+            class="donateAll__wrapIcon"
+          >
+            <img
+              alt="icon-pay-pal.svg"
+              class="donateAll__img"
+              src="/img/icon-pay-pal.svg"
+            />
+            <p
+              class="donateAll__text"
+            >
+              Перейти до PayPal
+            </p>
+            <p
+              class="donateAll__desc"
+            >
+              namecompany@gmail.com
+            </p>
+          </div>
+          <div
+            class="donateAll__wrapIconAlt"
+          >
+            <img
+              alt="icon-bitcoin.svg"
+              class="donateAll__img"
+              src="/img/icon-bitcoin.svg"
+            />
+            <div
+              class="donateAll__wrapText"
+            >
+              <p
+                class="donateAll__text"
+              >
+                BTC
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                0x0000000000000000000000000000000000000000
+              </p>
+            </div>
+            <img
+              alt="icon-ethereum.svg"
+              class="donateAll__img"
+              src="/img/icon-ethereum.svg"
+            />
+            <div
+              class="donateAll__wrapText"
+            >
+              <p
+                class="donateAll__text"
+              >
+                ETH
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                0x00000000000000000000000000000000
+              </p>
+            </div>
+            <img
+              alt="icon-tether.svg"
+              class="donateAll__img"
+              src="/img/icon-tether.svg"
+            />
+            <div
+              class="donateAll__wrapText"
+            >
+              <p
+                class="donateAll__text"
+              >
+                USDT
+              </p>
+              <p
+                class="donateAll__desc"
+              >
+                TG00000000000000000000000000000000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

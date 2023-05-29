@@ -1,0 +1,19 @@
+.body {
+  &.active {
+    overflow: hidden;
+
+  }
+}
+
+.loader {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}

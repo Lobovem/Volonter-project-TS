@@ -1,0 +1,61 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.contacts {
+
+  flex: 1;
+
+  &__wrap {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-24;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-white;
+    mix-blend-mode: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    line-height: 17px;
+    color: $color-white;
+    mix-blend-mode: normal;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__phoneBox {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  &__adressBox {
+    position: relative;
+    padding-left: 40px;
+
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+}

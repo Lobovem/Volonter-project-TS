@@ -1,0 +1,58 @@
+@import './src/styles/MixinsMedia.module.scss';
+@import './src/styles/Variables.module.scss';
+@import './src/styles/MixinsLayout.module.scss';
+@import './src/styles/MixinsKit.module.scss';
+
+.social {
+
+  flex: 1;
+
+  &__wrap {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    font-weight: $font-weight-500;
+    font-size: $font-size-24;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-white;
+    mix-blend-mode: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    line-height: 17px;
+    mix-blend-mode: normal;
+    text-decoration: none;
+    display: block;
+
+  }
+
+  &__wrapLink {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    display: flex;
+    color: $color-white;
+
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+}
