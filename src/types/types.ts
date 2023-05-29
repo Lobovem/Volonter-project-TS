@@ -70,3 +70,8 @@ export interface IPaginationProps {
 export type SliderFifthProps = {
   news: IListNews;
 };
+
+export type ITitleProps = {
+  title: string
+  children?: React.ReactNode;
+}

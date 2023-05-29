@@ -7,13 +7,17 @@ Object {
     <div>
       <h2
         class="titleMain"
-      />
+      >
+        Title
+      </h2>
     </div>
   </body>,
   "container": <div>
     <h2
       class="titleMain"
-    />
+    >
+      Title
+    </h2>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
