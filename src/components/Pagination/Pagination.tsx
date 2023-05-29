@@ -4,9 +4,9 @@ import { NewsList } from '../NewsList/NewsList';
 import { useSelector } from 'react-redux';
 import { listNewsSelector } from '../../redux/slice/contentSlice';
 import s from './Pagination.module.scss';
-import { IPageClickEvent } from '../../types/types';
+import { IPageClickEvent, IPaginationProps } from '../../types/types';
 
-export const Pagination = (props: { itemsPerPage: number }) => {
+export const Pagination = (props:IPaginationProps) => {
   const { itemsPerPage } = props;
   const listNews = useSelector(listNewsSelector);
 

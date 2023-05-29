@@ -55,10 +55,14 @@ export interface IPageClickEvent {
   selected: number;
 }
 
-export interface SectionHOCProps {
+export interface ISectionHOCProps extends IPaginationProps {
   classNameSection: string;
   classNameSectionWrap: string;
   classNameTitleSection: string;
-  titleSection: string;
-  itemsPerPage: number;
+  titleSection?: string;
+
+}
+
+export interface IPaginationProps {
+  itemsPerPage?: any;
 }

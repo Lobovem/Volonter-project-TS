@@ -8,7 +8,11 @@ import s from './SliderFifth.module.scss';
 import { useRef, useState } from 'react';
 import { BtnSliders } from '../../kit/BtnSliders/BtnSliders';
 
-export const SliderFifth = ({ news }) => {
+export const SliderFifth = (props) => {
+  const { news } = props;
+
+  console.log('oneNews', news);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 

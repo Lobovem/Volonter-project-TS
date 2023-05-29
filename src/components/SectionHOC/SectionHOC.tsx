@@ -13,9 +13,9 @@ import s from './SectionHOC.module.scss';
 import { GetHelp } from '../GetHelp/GetHelp';
 import { UserConditions } from '../UserConditions/UserConditions';
 import { DonateAll } from '../DonateAll/DonateAll';
-import { SectionHOCProps } from '../../types/types';
+import {   ISectionHOCProps } from '../../types/types';
 
-export const SectionHOC = (Component: ComponentType<SectionHOCProps>) => (props:SectionHOCProps) =>
+export const SectionHOC = (Component: ComponentType<ISectionHOCProps>) => (props:ISectionHOCProps) =>
   (
     <section className={s[props.classNameSection]}>
       <div className={s[props.classNameSectionWrap]}>
