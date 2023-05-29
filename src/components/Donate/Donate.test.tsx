@@ -29,7 +29,7 @@ describe('Donate component', () => {
         <Donate />
       </Router>
     );
-    const buttonElement = screen.getByRole('button', { type: 'button' });
+    const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
 });
