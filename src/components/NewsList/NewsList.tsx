@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
 import { TitleMain } from '../TitleMain/TitleMain';
+import { IListNews } from '../../types/types';
 import s from './NewsList.module.scss';
 // import { Loader } from '../Loader/Loader';
 
-export const NewsList = ({ currentItems }) => {
+export const NewsList = (props:{currentItems:IListNews[]}) => {
+  const { currentItems } = props;
+
+  console.log(currentItems);
+  
   // const dispatch = useDispatch();
 
   //I done useMemo that don't render often the component
@@ -23,7 +28,7 @@ export const NewsList = ({ currentItems }) => {
       <div className={s.news__wrap}>
         {/* <Loader /> */}
         {currentItems &&
-          currentItems.map((item) => (
+          currentItems.map((item:IListNews) => (
             <div className={s.news__inner} key={item.id}>
               <div className={s.news__imgWrap}>
                 <Link key={item.id} to={`/news/${item.id}`}>

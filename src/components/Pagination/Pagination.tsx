@@ -4,8 +4,10 @@ import { NewsList } from '../NewsList/NewsList';
 import { useSelector } from 'react-redux';
 import { listNewsSelector } from '../../redux/slice/contentSlice';
 import s from './Pagination.module.scss';
+import { IPageClickEvent } from '../../types/types';
 
-export const Pagination = ({ itemsPerPage }) => {
+export const Pagination = (props: { itemsPerPage: number }) => {
+  const { itemsPerPage } = props;
   const listNews = useSelector(listNewsSelector);
 
   // Here we use item offsets; we could also use page offsets
@@ -20,7 +22,7 @@ export const Pagination = ({ itemsPerPage }) => {
   const pageCount = Math.ceil(listNews.length / itemsPerPage);
 
   // Invoke when user click to request another page.
-  const handlePageClick = (event) => {
+  const handlePageClick = (event:IPageClickEvent) => {
     const newOffset = (event.selected * itemsPerPage) % listNews.length;
     setItem(newOffset);
   };

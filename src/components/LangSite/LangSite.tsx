@@ -1,7 +1,7 @@
-import { LangSiteProps } from '../../types/types';
+import { ILangSiteProps } from '../../types/types';
 import s from './LangSite.module.scss';
 
-export const LangSite = (props:LangSiteProps) => {
+export const LangSite = (props:ILangSiteProps) => {
   const { href } = props;
 
   return (

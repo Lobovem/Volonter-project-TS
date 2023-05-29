@@ -47,6 +47,10 @@ export interface BtnProps {
   nextRef?: any;
 }
 
-export interface LangSiteProps {
+export interface ILangSiteProps {
   href: string;
+}
+
+export interface IPageClickEvent {
+  selected: number;
 }
