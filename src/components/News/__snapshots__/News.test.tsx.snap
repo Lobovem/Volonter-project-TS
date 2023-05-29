@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`News renders News component 1`] = `
+<div>
+  <div
+    class="sectionNews"
+  >
+    <h3
+      class="sectionNews__decor"
+    >
+      Новини
+    </h3>
+    <div
+      class="sectionNews__inner"
+    >
+      <div
+        class="sectionNews__textWrap"
+      >
+        <h2
+          class="titleMain"
+        >
+          Наша мета - вирішення нагальних потреб Сил оборони України
+        </h2>
+        <p
+          class="sectionNews__desc"
+        >
+          UkrHumBat надає пріоритет в допомозі військовослужбовцям та членам їх сімей, а також, за можливості, допомагає цивільним особам, які опинились у зв'язку із війною в скрутному становищі.
+        </p>
+        <a
+          class="sectionNews__link"
+          href="/news"
+        >
+          Читати всі статті
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
