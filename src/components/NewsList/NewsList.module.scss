@@ -76,6 +76,12 @@
   &__img {
     max-width: 360px;
     border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover {
+      scale: 1.05;
+    }
   }
 
   &__textBox {
