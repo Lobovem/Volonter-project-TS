@@ -40,8 +40,8 @@ describe('Breadcrumbs component', () => {
     ];
 
     const dispatch = jest.fn();
-    useDispatch.mockReturnValue(dispatch);
-    useSelector.mockReturnValue(breadcrumbs);
+    (useDispatch as jest.Mock).mockReturnValue(dispatch);
+    (useSelector as jest.Mock).mockReturnValue(breadcrumbs);
 
     render(
       <Provider store={store}>
