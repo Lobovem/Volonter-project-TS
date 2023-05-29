@@ -13,7 +13,7 @@ export const SliderThird = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  const [init, setInit] = useState();
+  const [init, setInit] = useState(false);
 
   return (
     <>

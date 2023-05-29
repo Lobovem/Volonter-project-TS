@@ -14,7 +14,7 @@ export const SliderFirst = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  const [init, setInit] = useState();
+  const [init, setInit] = useState(false);
   const listNews = useSelector(listNewsSelector);
 
   return (
