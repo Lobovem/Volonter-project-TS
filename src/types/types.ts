@@ -31,7 +31,8 @@ export interface IContentState {
   inputDataForm: IInputDataForm,
   isLoading: boolean,
   error: string | undefined,
-  burgerState: boolean,
+  burgerState: boolean
+
 }
 
 export interface IRootState {

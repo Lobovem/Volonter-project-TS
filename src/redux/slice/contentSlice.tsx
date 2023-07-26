@@ -11,7 +11,7 @@ const initialState: IContentState = {
   inputDataForm: { id: '', name: '', email: '', textarea: '' },
   isLoading: false,
   error: '',
-  burgerState: false,
+  burgerState: false
 };
 
 export const contentSlice = createSlice({

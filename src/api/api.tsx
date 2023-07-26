@@ -5,7 +5,7 @@ import { IInputDataForm, IListMenu, IListNews } from '../types/types';
 //example fetch response
 export const fetchMenu = createAsyncThunk<IListMenu[]>('content/fetchMenu', async () => {
   try {
-    const response = await fetch('https://base-twmn.onrender.com/listMenu');
+    const response = await fetch('https://json-server-v2-0-versel.vercel.app/listMenu');
     if (!response.ok) {
       throw new Error('Error fetching news list');
     }
@@ -19,7 +19,7 @@ export const fetchMenu = createAsyncThunk<IListMenu[]>('content/fetchMenu', asyn
 //example response with .then
 export const fetchNews = createAsyncThunk<IListNews[]>('content/fetchNews', async () => {
   try {
-    const response = await fetch('https://base-twmn.onrender.com/news').then((data) => data.json());
+    const response = await fetch('https://json-server-v2-0-versel.vercel.app/news').then((data) => data.json());
     return response;
   } catch (error:any) {
     throw new Error(error.message);
@@ -48,7 +48,7 @@ export const fetchNews = createAsyncThunk<IListNews[]>('content/fetchNews', asyn
 //example axios response
 export const fetchOneNews = createAsyncThunk<IListNews, string| undefined>('content/fetchOneNews', async (id) => {
   try {
-    const response = await fetch(`https://base-twmn.onrender.com/news/${id}`);
+    const response = await fetch(`https://json-server-v2-0-versel.vercel.app/news/${id}`);
     if (!response.ok) {
       throw new Error('Error fetching news list');
     }
@@ -61,7 +61,7 @@ export const fetchOneNews = createAsyncThunk<IListNews, string| undefined>('cont
 
 export const postFormData = createAsyncThunk<void, IInputDataForm>('content/postFormData', async (imputDataForm, { dispatch }) => {
   try {
-    const response = await fetch('https://base-twmn.onrender.com/formData', {
+    const response = await fetch('https://json-server-v2-0-versel.vercel.app/formData', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
